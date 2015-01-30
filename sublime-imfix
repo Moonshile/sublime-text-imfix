@@ -20,12 +20,12 @@ else
     echo ''
     echo '**************** Updating and upgrading system **************'
     echo ''
-    sudo apt-get update >> /dev/null && sudo apt-get upgrade >> /dev/null
+    sudo apt-get update && sudo apt-get upgrade
 
     echo ''
     echo '**************** Installing Sublime Text 3 *****************'
     echo ''
-    sudo apt-get install -y sublime-text-installer >> /dev/null
+    sudo apt-get install -y sublime-text-installer
 
     echo ''
     echo '**************** Sublime Text 3 installed successfully *****'
@@ -57,23 +57,24 @@ else
     echo ''
     echo '**************** Updating system ***************************'
     echo ''
-    sudo apt-get update >> /dev/null
+    sudo apt-get update
 
     echo ''
     echo '**************** Installing Fcitx and Pinyin methods *******'
     echo ''
-    sudo apt-get install -y fcitx fcitx-config-gtk fcitx-sunpinyin fcitx-googlepinyin fcitx-module-cloudpinyin fcitx-sogoupinyin > /dev/null
+    sudo apt-get install -y fcitx fcitx-config-gtk fcitx-sunpinyin fcitx-googlepinyin fcitx-module-cloudpinyin fcitx-sogoupinyin
 
     echo ''
     echo '**************** Installing Fcitx related libs *************'
     echo ''
-    sudo apt-get install -y build-essential libgtk2.0-dev >> /dev/null
-    sudo apt-get install -y fcitx-table-all >> /dev/null
+    sudo apt-get install -y build-essential libgtk2.0-dev
+    sudo apt-get install -y fcitx-table-all
 
     echo ''
     echo '**************** Fcitx installed successfully! **************'
     echo ''
     echo '**************** Setting Fcitx as the default input method! *'
+    sudo apt-get install im-switch
     im-switch -s fcitx -z default
   else
     echo ''
