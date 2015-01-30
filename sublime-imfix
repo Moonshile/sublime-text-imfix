@@ -82,7 +82,7 @@ else
   fi
 fi
 
-if which -s subl && which -s fcitx
+if which subl && which fcitx
 then
   echo ''
   echo '**************** Adding shared lib to sublime directory *****'
