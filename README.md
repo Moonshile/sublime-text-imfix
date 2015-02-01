@@ -1,58 +1,3 @@
-### Sublime Text IM Fix
-
-This repo is aimed at doing below three things:
-
-+ Install Sublime Text 3
-+ Install Fcitx Input Method
-+ Fix Sublime Text 2/3's input method problem under Ubuntu(Debian) System
-
-### Steps to use this repo ###
-
-+ Update and then upgrade your system to the newest
-
-```bash
-sudo apt-get update && sudo apt-get upgrade
-```
-
-+ Clone this repo in your local directory : 
-
-```bash
-git clone https://github.com/lyfeyaj/sublime-text-imfix.git
-```
-    
-+ Change your current directory to `sublime-text-imfix`:
-
-```bash
-cd sublime-text-imfix
-```
-    
-+ Run the below script : 
-
-```bash
-./sublime-imfix
-```
-
-+ Done! Re-login your X windows. And then you can enjoy using Sublime Text 3 with Fctix Input Method!
-
-### Completion Preview Image:
-
-![Fcitx](image/fcitx.png)
-
-### Important Note
-
-+ **Sublime Text 3 input method fix only works when executing from terminal, such as `subl .`**
-
-### Todo
-
-+ Add desktop launcher
-+ Add compile detail to this README
-
-```bash
-gcc -shared -o libsublime-imfix.so sublime_imfix.c  `pkg-config --libs --cflags gtk+-2.0` -fPIC
-```
-
---------------
-
 ### Sublime Text 2/3 输入法修复[Ubuntu(Debian)]
 
 主要目的:
@@ -72,7 +17,7 @@ sudo apt-get update && sudo apt-get upgrade
 + 克隆项目到本地 : 
 
 ```bash
-git clone https://github.com/lyfeyaj/sublime-text-imfix.git
+git clone https://github.com/Moonshile/sublime-text-imfix
 ```
 
 + 运行脚本 : 
